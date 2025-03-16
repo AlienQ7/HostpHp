@@ -9,7 +9,7 @@ echo -e "\t\t ░▀░▀░▀▀▀░▀▀▀░░▀░░▀░░░▀
 echo -e "\t\t⟨ Ctrl+c to Exit the Program ⟩\033[0m"
 read -p $'\e[1;32mEnter File Name:\e[34m ' filename
 echo ""
-if [[ $filename != *.html ]]; then
+if [[ $filename != *.html &&  $filename != *.htm]]; then
     echo -e "\033[31mError: Please provide a valid .html file name."
     continue
   fi
